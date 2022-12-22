@@ -2,30 +2,33 @@ package Builder01;
 
 public class UnoMilleCarBuilder implements CarBuilder {
 
-	@Override
-	public void getEngine() {
-		// TODO Auto-generated method stub
-		
-	}
+	private UnoMilleCar unoMilleCar = new UnoMilleCar();
 
 	@Override
-	public void getBodywork() {
-		// TODO Auto-generated method stub
-		
+	public void reset() {
+		unoMilleCar = new UnoMilleCar();
 	}
-
-	@Override
-	public void getWheels() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void getSeats() {
-		// TODO Auto-generated method stub
-		
-	}
-
 	
+	@Override
+	public void buildEngine() {
+		unoMilleCar.setEngine("Engine fire 1.0");
+	}
 
+	@Override
+	public void buildBodywork() {
+		unoMilleCar.setBodywork("Light bodywork");;
+	}
+
+	@Override
+	public void buildWheels() {
+		unoMilleCar.setWhells("13\" wheels");;
+	}
+
+	@Override
+	public void buildSeats() {
+		unoMilleCar.setSeats("Simple seats");;
+	}
+	
+	public 
+	
 }

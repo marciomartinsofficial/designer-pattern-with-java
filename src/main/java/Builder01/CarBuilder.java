@@ -2,12 +2,14 @@ package Builder01;
 
 public interface CarBuilder {
 
-	public void getEngine();
+	public void reset();
 	
-	public void getBodywork();
+	public void buildEngine();
 	
-	public void getWheels();
+	public void buildBodywork();
 	
-	public void getSeats();
+	public void buildWheels();
+	
+	public void buildSeats();
 	
 }
