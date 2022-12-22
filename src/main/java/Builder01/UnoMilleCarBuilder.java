@@ -29,6 +29,10 @@ public class UnoMilleCarBuilder implements CarBuilder {
 		unoMilleCar.setSeats("Simple seats");;
 	}
 	
-	public 
+	public UnoMilleCar createUnoMilleCar() {
+		UnoMilleCar newUnoMilleCar = unoMilleCar;
+		reset();
+		return newUnoMilleCar;
+	}
 	
 }

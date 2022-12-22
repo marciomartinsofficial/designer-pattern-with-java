@@ -2,16 +2,18 @@ package Builder01;
 
 public class DirectorCarBuilder {
 
-	public CarBuilder carBuilder;
-
 	public UnoMilleCar createUnoMilleCar() {
-		carBuilder = new UnoMilleCarBuilder();
-		
-		
-		
-		return null;
+		UnoMilleCarBuilder unoMilleCarBuilder = new UnoMilleCarBuilder();
+		build(unoMilleCarBuilder);
+		UnoMilleCar newUnoMilleCar = unoMilleCarBuilder.createUnoMilleCar();
+		return newUnoMilleCar;
 	}
 	
-	//
+	private void build(CarBuilder carBuilder) {
+		carBuilder.buildEngine();
+		carBuilder.buildBodywork();
+		carBuilder.buildWheels();
+		carBuilder.buildSeats();
+	}
 	
 }
