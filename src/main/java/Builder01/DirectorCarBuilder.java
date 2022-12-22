@@ -23,4 +23,11 @@ public class DirectorCarBuilder {
 		return newPageroCar;
 	}
 	
+	public AssemblyInstructions createAssemblyInstructionsPageroCar() {
+		AssemblyInstructionPageroCarBuilder assemblyInstructionPageroCarBuilder = new AssemblyInstructionPageroCarBuilder();
+		build(assemblyInstructionPageroCarBuilder);
+		AssemblyInstructions newAssemblyInstructionPageroCar = assemblyInstructionPageroCarBuilder.createAssemblyInstructionsPageroCar();
+		return newAssemblyInstructionPageroCar;
+	}
+	
 }
