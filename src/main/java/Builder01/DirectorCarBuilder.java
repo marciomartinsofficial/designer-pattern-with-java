@@ -2,10 +2,10 @@ package Builder01;
 
 public class DirectorCarBuilder {
 
-	public UnoMilleCar createUnoMilleCar() {
+	public Car createUnoMilleCar() {
 		UnoMilleCarBuilder unoMilleCarBuilder = new UnoMilleCarBuilder();
 		build(unoMilleCarBuilder);
-		UnoMilleCar newUnoMilleCar = unoMilleCarBuilder.createUnoMilleCar();
+		Car newUnoMilleCar = unoMilleCarBuilder.createUnoMilleCar();
 		return newUnoMilleCar;
 	}
 	

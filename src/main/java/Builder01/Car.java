@@ -1,6 +1,6 @@
 package Builder01;
 
-public class UnoMilleCar {
+public class Car {
 
 	private String engine;
 	

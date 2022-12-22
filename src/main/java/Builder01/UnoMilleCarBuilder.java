@@ -2,11 +2,11 @@ package Builder01;
 
 public class UnoMilleCarBuilder implements CarBuilder {
 
-	private UnoMilleCar unoMilleCar = new UnoMilleCar();
+	private Car unoMilleCar = new Car();
 
 	@Override
 	public void reset() {
-		unoMilleCar = new UnoMilleCar();
+		unoMilleCar = new Car();
 	}
 	
 	@Override
@@ -29,8 +29,8 @@ public class UnoMilleCarBuilder implements CarBuilder {
 		unoMilleCar.setSeats("Simple seats");;
 	}
 	
-	public UnoMilleCar createUnoMilleCar() {
-		UnoMilleCar newUnoMilleCar = unoMilleCar;
+	public Car createUnoMilleCar() {
+		Car newUnoMilleCar = unoMilleCar;
 		reset();
 		return newUnoMilleCar;
 	}
